@@ -1,0 +1,18 @@
+---
+# defaults file for ansible-role-openstack-cinder-volume
+ansible_unit_test_prefix_dir: ""
+ansible_unit_test: false
+
+openstack_cinder_volume_configs: []
+
+#openstack_cinder_volume_verbose: False
+#openstack_cinder_volume_auth_strategy: noauth
+#openstack_cinder_volume_rootwrap_config: /etc/cinder/rootwrap.conf
+#openstack_cinder_volume_api_paste_confg: /etc/cinder/api-paste.ini
+#openstack_cinder_volume_iscsi_helper: tgtadm
+#openstack_cinder_volume_volume_name_template: volume-%s
+#openstack_cinder_volume_volume_group: cinder-volumes
+#openstack_cinder_volume_state_path: /var/lib/cinder
+#openstack_cinder_volume_lock_path: /var/lock/cinder
+#openstack_cinder_volume_volumes_dir: /var/lib/cinder/volumes
+#openstack_cinder_volume_driver=cinder.volume.drivers.lvm.LVMISCSIDriver

@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-role-openstack-cinder-volume
+- name: Sets attributes of files
+  file: state=directory recurse=yes path="{{ ansible_unit_test_prefix_dir }}/etc/cinder/"
+
+- name: Templates a file out to a remote server.
+  template: src="cinder.conf.j2" dest="{{ ansible_unit_test_prefix_dir }}/etc/cinder/"

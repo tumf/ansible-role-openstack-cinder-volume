@@ -1,0 +1,17 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  tags:
+    - install
+  roles:
+    - role: ../..
+      openstack_cinder_volume_configs:
+        DEFAULT:
+          verbose: False
+          auth_strategy: noauth
+        keystone_authtoken:
+          admin_tenant_name: services
+          admin_user: cinder
+          admin_password: redhat
+  tasks:
+    - debug: msg="The test case is succeeded."

@@ -1,0 +1,9 @@
+{% for section in openstack_cinder_volume_configs %}
+[{{ section }}]
+{% if openstack_cinder_volume_configs[section] is iterable %}
+{% for key in openstack_cinder_volume_configs[section] %}
+{{ key }}: {{ openstack_cinder_volume_configs[section][key] }}
+{% endfor %}
+{% endif %}
+
+{% endfor %}
